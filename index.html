@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passo a Passo GitHub Pages - Zoom 150%</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            /* Margens bem generosas para acomodar o crescimento gigante */
+            padding: 120px 20px; 
+        }
+
+        h1 {
+            margin-bottom: 60px;
+            color: #444;
+            text-align: center;
+        }
+
+        .gallery-container {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Espaço amplo entre os cards para não sobrepô-los no hover */
+            gap: 120px; 
+        }
+
+        .card {
+            width: 100%;
+            max-width: 500px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- EFEITO DE AUMENTO DE 150% --- */
+        /* scale(2.5) significa 250% do tamanho original (um acréscimo de 150%) */
+        .card:hover {
+            transform: scale(3.5) rotate(1deg); 
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+            z-index: 100;
+        }
+        /* -------------------------------- */
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-title {
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+            background-color: #fff;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1>Passo a Passo - GitHub Pages</h1>
+        
+        <!-- Imagem 1 -->
+        <div class="card">
+            <img src="Imagem_GitHub_site01.png" alt="Passo 1">
+            <div class="card-title">Passo 1: Página Inicial</div>
+        </div>
+
+        <!-- Imagem 2 -->
+        <div class="card">
+            <img src="Imagem_GitHub_site06.png" alt="Passo 2">
+            <div class="card-title">Passo 2: Repositório Criado</div>
+        </div>
+
+        <!-- Imagem 3 -->
+        <div class="card">
+            <img src="Imagem_GitHub_site07.png" alt="Passo 3">
+            <div class="card-title">Passo 3: Configurações</div>
+        </div>
+
+        <!-- Imagem 4 -->
+        <div class="card">
+            <img src="Imagem_GitHub_site09.png" alt="Passo 4">
+            <div class="card-title">Passo 4: Menu Pages</div>
+        </div>
+
+        <!-- Imagem 5 -->
+        <div class="card">
+            <img src="Imagem_GitHub_site10.png" alt="Passo 5">
+            <div class="card-title">Passo 5: Deployment Pendente</div>
+        </div>
+
+        <!-- Imagem 6 -->
+        <div class="card">
+            <img src="Imagem_GitHub_site11.png" alt="Passo 6">
+            <div class="card-title">Passo 6: Arquivos Carregando</div>
+        </div>
+
+        <!-- Imagem 7 -->
+        <div class="card">
+            <img src="Imagem_GitHub_site12.png" alt="Passo 7">
+            <div class="card-title">Passo 7: Confirmação de Upload</div>
+        </div>
+
+        <!-- Imagem 8 -->
+        <div class="card">
+            <img src="Imagem_GitHub_site14.png" alt="Passo 8">
+            <div class="card-title">Passo 8: Selecionar Arquivos</div>
+        </div>
+
+        <!-- Imagem 9 -->
+        <div class="card">
+            <img src="Imagem_GitHub_site15.png" alt="Passo 9">
+            <div class="card-title">Passo 9: Área de Upload</div>
+        </div>
+
+        <!-- Imagem 10 -->
+        <div class="card">
+            <img src="Imagem_GitHub_site18.png" alt="Passo 10">
+            <div class="card-title">Passo 10: Criar/Adicionar Arquivo</div>
+        </div>
+
+        <!-- Imagem 11 -->
+        <div class="card">
+            <img src="Imagem_GitHub_site19.png" alt="Passo 11">
+            <div class="card-title">Passo 11: Link do Site</div>
+        </div>
+    </div>
+
+</body>
+</html>
